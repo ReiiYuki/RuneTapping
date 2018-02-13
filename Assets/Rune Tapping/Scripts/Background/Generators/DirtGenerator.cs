@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DirtGenerator : MonoBehaviour {
-
+    
     public GameObject dirt, grassDirt;
 
     const float DIRT_SIZE = 1.28f;
