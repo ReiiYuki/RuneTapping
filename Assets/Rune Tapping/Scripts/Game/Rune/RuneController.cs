@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RuneBehavior : MonoBehaviour {
+public class RuneController : MonoBehaviour {
 
     public GameObject rune, groundExplosion, touchEffect;
 
@@ -27,4 +27,9 @@ public class RuneBehavior : MonoBehaviour {
 
     }
     
+    void OnSelect()
+    {
+        rune.SetActive(false);
+        touchEffect.SetActive(true);
+    }
 }
