@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class SkyGenerator : MonoBehaviour {
 
@@ -11,6 +9,7 @@ public class SkyGenerator : MonoBehaviour {
     const float DISTANCE_BETWEEN_LAYER = 3f;
     const float MINIMUM_CLOUD_BOUND_X = -5f;
     const int NUM_CLOUD_LAYER = 3;
+    const int NUM_DIRECTION = 2;
 
 	// Use this for initialization
 	void Start () {
@@ -24,7 +23,7 @@ public class SkyGenerator : MonoBehaviour {
             float minY = MINIMUM_CLOUD_HIGH + i * DISTANCE_BETWEEN_LAYER;
             float maxY = minY + CLOUD_LAYER_DEPTH;
             float y = Random.Range(minY, maxY);
-            bool isDirectionRight = Random.Range(0, 2) == 0;
+            bool isDirectionRight = Random.Range(0, NUM_DIRECTION) == 0;
             float x = isDirectionRight ? MINIMUM_CLOUD_BOUND_X : -1 * MINIMUM_CLOUD_BOUND_X;
             GameObject cloudObject = Instantiate(cloud, new Vector2(x, y), Quaternion.identity, transform);
             cloudObject.GetComponent<CloudBehaviour>().isDirectionRight = isDirectionRight;
