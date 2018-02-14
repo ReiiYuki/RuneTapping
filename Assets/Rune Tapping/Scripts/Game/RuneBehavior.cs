@@ -16,7 +16,7 @@ public class RuneBehavior : MonoBehaviour {
         transform.Translate(Input.GetAxis("Vertical") * Vector2.up * Time.deltaTime);
 	}
 
-    public void OnHitFloor()
+    void OnHitFloor()
     {
         rune.SetActive(false);
         groundExplosion.SetActive(true);
@@ -26,4 +26,5 @@ public class RuneBehavior : MonoBehaviour {
     {
 
     }
+    
 }
