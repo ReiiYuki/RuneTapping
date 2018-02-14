@@ -5,6 +5,7 @@ using UnityEngine;
 public class RuneController : MonoBehaviour {
 
     public GameObject rune, groundExplosion, touchEffect;
+    protected int score = 1;
 
 	// Use this for initialization
 	void Start () {
