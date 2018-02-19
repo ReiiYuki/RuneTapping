@@ -19,7 +19,7 @@ public class CloudBehaviour : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-        if (isOutBound())
+        if (IsOutBound())
         {
             ResetCloud();
         }else
@@ -28,7 +28,7 @@ public class CloudBehaviour : MonoBehaviour {
         }
 	}
 
-    bool isOutBound()
+    bool IsOutBound()
     {
         if (isDirectionRight)
         {

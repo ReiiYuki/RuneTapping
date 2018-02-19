@@ -252,6 +252,48 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 669782e9edeec1142845dcdb336e6f36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &69248328
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 69248330}
+  - component: {fileID: 69248329}
+  m_Layer: 0
+  m_Name: Game Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &69248329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69248328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6adfe6554f9165b46a0e1c51551ebc1f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MAX_TIME: 40
+  MIN_TIME: 0
+--- !u!4 &69248330
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 69248328}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.1431388, y: 1.5398127, z: 8.212959}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &255739163
 GameObject:
   m_ObjectHideFlags: 0
@@ -262,6 +304,7 @@ GameObject:
   - component: {fileID: 255739164}
   - component: {fileID: 255739166}
   - component: {fileID: 255739165}
+  - component: {fileID: 255739167}
   m_Layer: 5
   m_Name: Combo Text
   m_TagString: Untagged
@@ -326,6 +369,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 255739163}
+--- !u!114 &255739167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 255739163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 281f26d5ea22e134fad199c5060b1baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 69248328}
 --- !u!1 &256935863
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,11 +489,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2ee8f3864a113240abc6aca06c994d4, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &961992936 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1105232665333980, guid: baf5f4cff356a5f489d045cb23e9e707,
-    type: 2}
-  m_PrefabInternal: {fileID: 1727163174}
 --- !u!4 &961992940 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4901658444419108, guid: baf5f4cff356a5f489d045cb23e9e707,
@@ -518,11 +568,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1018610669}
---- !u!1 &1037002031 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1039873527408968, guid: b2ee8f3864a113240abc6aca06c994d4,
-    type: 2}
-  m_PrefabInternal: {fileID: 467926985}
 --- !u!4 &1037002035 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4333976352987292, guid: b2ee8f3864a113240abc6aca06c994d4,
@@ -640,7 +685,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1408437114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -652,9 +697,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8be067c20567799499140421c9ff17bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rune: {fileID: 37631894}
-  groundExplosion: {fileID: 961992936}
-  touchEffect: {fileID: 1037002031}
 --- !u!4 &1408437115
 Transform:
   m_ObjectHideFlags: 0
@@ -728,6 +770,7 @@ GameObject:
   - component: {fileID: 1654717645}
   - component: {fileID: 1654717647}
   - component: {fileID: 1654717646}
+  - component: {fileID: 1654717648}
   m_Layer: 5
   m_Name: Time Guage
   m_TagString: Untagged
@@ -786,6 +829,18 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654717644}
+--- !u!114 &1654717648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1654717644}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a34dae47d838944da9b9c386bf74851, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 69248328}
 --- !u!1001 &1727163174
 Prefab:
   m_ObjectHideFlags: 0
@@ -863,6 +918,7 @@ GameObject:
   - component: {fileID: 2094113369}
   - component: {fileID: 2094113371}
   - component: {fileID: 2094113370}
+  - component: {fileID: 2094113372}
   m_Layer: 5
   m_Name: Score Text
   m_TagString: Untagged
@@ -927,3 +983,15 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2094113368}
+--- !u!114 &2094113372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2094113368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19f83a8f4f6d8aa42a0eb66004b20f82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameController: {fileID: 69248328}
