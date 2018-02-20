@@ -489,6 +489,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: b2ee8f3864a113240abc6aca06c994d4, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &961992936 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1105232665333980, guid: baf5f4cff356a5f489d045cb23e9e707,
+    type: 2}
+  m_PrefabInternal: {fileID: 1727163174}
 --- !u!4 &961992940 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4901658444419108, guid: baf5f4cff356a5f489d045cb23e9e707,
@@ -568,6 +573,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1018610669}
+--- !u!1 &1037002031 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1039873527408968, guid: b2ee8f3864a113240abc6aca06c994d4,
+    type: 2}
+  m_PrefabInternal: {fileID: 467926985}
 --- !u!4 &1037002035 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4333976352987292, guid: b2ee8f3864a113240abc6aca06c994d4,
@@ -685,7 +695,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1408437114
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -694,9 +704,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1408437113}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8be067c20567799499140421c9ff17bc, type: 3}
+  m_Script: {fileID: 11500000, guid: c34e61147a28aba438473390a4123cef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rune: {fileID: 37631894}
+  groundExplosion: {fileID: 961992936}
+  touchEffect: {fileID: 1037002031}
 --- !u!4 &1408437115
 Transform:
   m_ObjectHideFlags: 0
@@ -908,6 +921,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 094bd7bdcf746b644973de19eb16bdcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameController: {fileID: 69248328}
 --- !u!1 &2094113368
 GameObject:
   m_ObjectHideFlags: 0

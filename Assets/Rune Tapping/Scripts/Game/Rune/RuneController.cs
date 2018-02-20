@@ -1,16 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
 using UnityEngine;
 
-public class RuneController : MonoBehaviour {
+public abstract class RuneController : MonoBehaviour {
 
     public GameObject rune, groundExplosion, touchEffect;
-    protected int score = 1;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
 
 	// Update is called once per frame
 	void Update () {
@@ -23,14 +16,14 @@ public class RuneController : MonoBehaviour {
         groundExplosion.SetActive(true);
     }
 
-    void OnFinishAnimation()
-    {
+    protected abstract void OnFinishAnimation();
 
-    }
-    
+    protected abstract void ApplyEffect();
+
     void OnSelect()
     {
         rune.SetActive(false);
         touchEffect.SetActive(true);
+        ApplyEffect();
     }
 }
