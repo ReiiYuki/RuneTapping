@@ -6,13 +6,26 @@ public class RuneGenerator : MonoBehaviour {
 
     List<GameObject> normalRunePool, xRunePool, otherPool;
 
-    // Use this for initialization
-    void Start () {
+    void Awake()
+    {
+        InitPool();    
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    void InitPool()
+    {
+        normalRunePool = new List<GameObject>();
+        xRunePool = new List<GameObject>();
+        otherPool = new List<GameObject>();
+    }
+
+    public void AddToNormalRunePool(GameObject normalRune)
+    {
+        normalRunePool.Add(normalRune);
+    }
+
 }

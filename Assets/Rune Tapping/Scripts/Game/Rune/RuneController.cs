@@ -5,11 +5,6 @@ public abstract class RuneController : MonoBehaviour {
 
     public GameObject rune, groundExplosion, touchEffect;
 
-	// Update is called once per frame
-	void Update () {
-        transform.Translate(Input.GetAxis("Vertical") * Vector2.up * Time.deltaTime);
-	}
-
     void OnHitFloor()
     {
         rune.SetActive(false);
@@ -26,4 +21,12 @@ public abstract class RuneController : MonoBehaviour {
         touchEffect.SetActive(true);
         ApplyEffect();
     }
+
+    public void ResetRune()
+    {
+        rune.SetActive(true);
+        groundExplosion.SetActive(false);
+        touchEffect.SetActive(false);
+    }
+
 }
