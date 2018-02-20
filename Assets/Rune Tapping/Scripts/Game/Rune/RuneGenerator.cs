@@ -33,4 +33,8 @@ public class RuneGenerator : MonoBehaviour {
         xRunePool.Add(xRune);
     }
 
+    public void AddToOtherRunePool(GameObject otherRune)
+    {
+        otherPool.Add(otherRune);
+    }
 }

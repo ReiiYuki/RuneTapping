@@ -1,7 +1,7 @@
 ﻿
 using UnityEngine;
 
-class NormalRuneEffect : Effect
+public class NormalRuneEffect : Effect
 {
     protected float time = 0;
     public override void ApplyEffect(GameController game)

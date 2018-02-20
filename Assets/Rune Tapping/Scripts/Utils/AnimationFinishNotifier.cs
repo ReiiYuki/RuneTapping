@@ -16,6 +16,7 @@ public class AnimationFinishNotifier : MonoBehaviour {
     void FinishAnimation()
     {
         transform.parent.SendMessage("OnFinishAnimation");
+        isFinishAnimation = false;
         gameObject.SetActive(false);
     }
 
