@@ -28,4 +28,9 @@ public class RuneGenerator : MonoBehaviour {
         normalRunePool.Add(normalRune);
     }
 
+    public void AddToXRunePool(GameObject xRune)
+    {
+        xRunePool.Add(xRune);
+    }
+
 }

@@ -73,7 +73,7 @@ public class GameController : MonoBehaviour {
         combo++;
     }
 
-    void BreakCombo()
+    public void BreakCombo()
     {
         combo = 0;
     }
