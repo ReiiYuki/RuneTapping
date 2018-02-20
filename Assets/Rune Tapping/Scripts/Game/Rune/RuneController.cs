@@ -5,7 +5,7 @@ public abstract class RuneController : MonoBehaviour {
 
     public GameObject rune, groundExplosion, touchEffect;
 
-    void OnHitFloor()
+    protected void OnHitFloor()
     {
         rune.SetActive(false);
         groundExplosion.SetActive(true);

@@ -22,4 +22,10 @@ public class NormalRuneController : RuneController {
         GameObject.FindObjectOfType<RuneGenerator>().AddToNormalRunePool(gameObject);
     }
 
+    protected new void OnHitFloor()
+    {
+        base.OnHitFloor();
+        GameObject.FindObjectOfType<GameController>().BreakCombo();
+    }
+
 }
