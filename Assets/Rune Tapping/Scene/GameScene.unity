@@ -316,6 +316,64 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &408066461 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1959770296449154, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a,
+    type: 2}
+  m_PrefabInternal: {fileID: 884860505}
+--- !u!1001 &884860505
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 8.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4077716468673026, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1267107678706572, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+      propertyPath: m_Name
+      value: Score Rune
+      objectReference: {fileID: 0}
+    - target: {fileID: 212191555178243656, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300062, guid: b193672970dee6a44b0a359f3429ea3c,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 114803121222066252, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &980555330
 Prefab:
   m_ObjectHideFlags: 0
@@ -325,11 +383,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.48966706
+      value: 0.16
       objectReference: {fileID: 0}
     - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 8.833017
+      value: 9.63
       objectReference: {fileID: 0}
     - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -358,6 +416,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &987116773 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1155455237671126, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a,
+    type: 2}
+  m_PrefabInternal: {fileID: 884860505}
 --- !u!1 &1018610669
 GameObject:
   m_ObjectHideFlags: 0
@@ -529,6 +592,11 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1124479114 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1814738838981808, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a,
+    type: 2}
+  m_PrefabInternal: {fileID: 884860505}
 --- !u!1001 &1451907588
 Prefab:
   m_ObjectHideFlags: 0
@@ -657,6 +725,71 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameController: {fileID: 69248328}
+--- !u!1001 &1828455781
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101343619883026, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607055852919776, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+      propertyPath: m_Name
+      value: Normal Rune (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: c4b4f91e609103c4d9a56136230560c8, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &1837502732 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1267107678706572, guid: 69c0b9e6cdeaf1f48b51ecef0e42869a,
+    type: 2}
+  m_PrefabInternal: {fileID: 884860505}
+--- !u!114 &1837502733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1837502732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd13eaf3e74bae84e853436a4e907850, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rune: {fileID: 408066461}
+  groundExplosion: {fileID: 1124479114}
+  touchEffect: {fileID: 987116773}
 --- !u!1001 &2006680949
 Prefab:
   m_ObjectHideFlags: 0

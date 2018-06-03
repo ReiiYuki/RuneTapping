@@ -65,7 +65,14 @@ public class GameController : MonoBehaviour {
 
     public void UpdateScore()
     {
+        Debug.Log(scoreEffect);
         score += (score + combo * 100) * scoreEffect;
+    }
+
+    public void ApplyScoreEffect()
+    {
+        scoreEffect *= 2;
+        Debug.Log("EFF"+scoreEffect);
     }
 
     public void UpdateCombo()
